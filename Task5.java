@@ -3,7 +3,7 @@ package com.max.idea.JavaBasicIBS;
 import  java.util.Scanner;
 
 public class Task5 {
-    static Scanner scanner = new Scanner(System.in);    //введем объект Scanner, который будет читать вводимые данные с консоли
+    static Scanner scanner = new Scanner(System.in);    //введем объект scanner, который будет читать вводимые данные с консоли
 
     public static void main(String[] args) {    //метод, который считывает введенные числа и операцию над ними + возвращает результат
         int num1 = getInt();
