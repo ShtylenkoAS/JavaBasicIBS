@@ -12,6 +12,7 @@ public class Task3 {
         System.out.println("Массив, в котором первый и последний элемент поменялись местами" + Arrays.toString(myList));    //вывожу в консоль "перевернутый" массив
 
         int median = myList[myList.length - 3]; //присваиваю переменной средний элемент в массиве
+        //вывод в консоль
         System.out.println("Сумма первого и среднего элемента в изначальном массиве: " + (myList[myList.length - 1] + median));
         System.out.println("Сумма первого и среднего элемента в измененном массиве: " + (myList[0] + median));
     }
