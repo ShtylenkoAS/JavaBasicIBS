@@ -4,7 +4,7 @@ import  java.util.Scanner;
 
 public class Task4 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);    //введем объект Scanner, который будет читать вводимые данные с консоли
+        Scanner in = new Scanner(System.in);    //введем объект scanner, который будет читать вводимые данные с консоли
 
         System.out.println("Введите число x: ");    //сообщение для удобовосприятия
         double x = in.nextDouble(); //вводим число х
