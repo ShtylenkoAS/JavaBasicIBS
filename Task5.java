@@ -9,7 +9,7 @@ public class Task5 {
         int num1 = getInt();
         int num2 = getInt();
         char operation = getOperation();
-        int result = calc(num1,num2,operation);
+        int result = calc(num1, num2, operation);
         System.out.println("Результат операции: " + result);
     }
 
@@ -19,20 +19,20 @@ public class Task5 {
         if(scanner.hasNextInt()){   //проверка на то, что ввели число типа int
             num = scanner.nextInt();
         } else {
-            System.out.println("Вы допустили ошибку при вводе числа. Попробуйте еще раз.");
+            System.out.println("Ошибка при вводе числа, введите корректное число");
             scanner.next();     //рекурсия (зацикл пока не введем int)
             num = getInt();
         }
         return num;
     }
 
-    public static char getOperation(){
+    public static char getOperation(){      //метод, считывающий допустимую операцию калькулятора
         System.out.println("Введите операцию: ");
         char operation;
         if(scanner.hasNext()){      //проверка на допустимый символ операции
             operation = scanner.next().charAt(0);
         } else {
-            System.out.println("Вы допустили ошибку при вводе операции. Попробуйте еще раз.");
+            System.out.println("Ошибка при вводе операции, введите допустимую операцию");
             scanner.next();     //рекурсия
             operation = getOperation();
         }
@@ -55,7 +55,7 @@ public class Task5 {
                 result = num1 / num2;
                 break;
             default:
-                System.out.println("Операция не распознана. Повторите ввод.");
+                System.out.println("Ошибка при вводе операции, введите допустимую операцию");
                 result = calc(num1, num2, getOperation());      //рекурсия
         }
         return result;
