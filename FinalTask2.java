@@ -16,10 +16,7 @@ public class FinalTask2 {
         int y = Character.getNumericValue(equation[0]);     //перменные, хранят в себе либо введеные числа, либо сам x
         int z = Character.getNumericValue(equation[2]);     //перменные, хранят в себе либо введеные числа, либо сам x
         int c = Character.getNumericValue(equation[4]);     //перменные, хранят в себе либо введеные числа, либо сам x
-
-        String plus = "+";
-        String  minus = "-";
-
+        
         if (equation.length == 5) {     //проверка на длину строчки
             if (array.indexOf("+") == 1) {      //возвращаем идекс элемента "+" и сравниваем с 1 (так как по условию знак + или - могут быть только там)
                 switch (x) {
