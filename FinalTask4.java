@@ -36,6 +36,7 @@ public class FinalTask4 {
                     }
                     else if (answer.equals("Подсказка") && i > 0) {
                         System.out.println("Увы, подсказка уже недоступна");
+                        i = i -1;   //поправка на ввод "Подсказка": при вводе на 2 или 3 шаге количество попыток не изменится
                     }
                     else if (i < 2) {
                         System.out.println("Попробуй еще");
